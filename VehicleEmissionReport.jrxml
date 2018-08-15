@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="13ecb0c9-1f8b-469a-8b7b-64fc603345c3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TH" mode="Opaque" backcolor="#757C82">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_CH" mode="Opaque" backcolor="#E6F2FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="FleetList" uuid="a1f42163-a428-4533-8492-4f8ebab646e4">
+		<queryString language="SQL">
+			<![CDATA[SELECT VEHICLETYPE, COUNT(VEHICLETYPE) Number_of_vehicle, SUM(KILOMETERS) Total_annual_milage,SUM(FUELCONSUMPTION) Total_annual_fuel_consumption
+ FROM VEHICLE GROUP BY VEHICLETYPE]]>
+		</queryString>
+		<field name="VEHICLETYPE" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="NUMBER_OF_VEHICLE" class="java.lang.Integer"/>
+		<field name="TOTAL_ANNUAL_MILAGE" class="java.lang.Double"/>
+		<field name="TOTAL_ANNUAL_FUEL_CONSUMPTION" class="java.lang.Double"/>
+		<group name="VEHICLETYPE">
+			<groupExpression><![CDATA[$F{VEHICLETYPE}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="EmissionSummary" uuid="3b145b65-d5ba-4f84-8e63-f797c902a2e3">
+		<queryString language="SQL">
+			<![CDATA[SELECT SUM(CO2) Carbon_Dioxide,
+SUM(CO) Carbon_Monoxide,
+SUM(VOC) Volatile_Organic_Compounds,
+SUM(NOX) Nitrogen_Oxides,
+SUM(SOX) Sulphur_Oxides,
+SUM(PM10) Particulate_Matter  
+FROM EMISSIONS]]>
+		</queryString>
+		<field name="CARBON_DIOXIDE" class="java.lang.Double"/>
+		<field name="CARBON_MONOXIDE" class="java.lang.Double"/>
+		<field name="VOLATILE_ORGANIC_COMPOUNDS" class="java.lang.Double"/>
+		<field name="NITROGEN_OXIDES" class="java.lang.Double"/>
+		<field name="SULPHUR_OXIDES" class="java.lang.Double"/>
+		<field name="PARTICULATE_MATTER" class="java.lang.Double"/>
+	</subDataset>
+	<queryString>
+		<![CDATA[select * from company
+
+ 
+]]>
+	</queryString>
+	<field name="CID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C_NAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C_PHONE_NO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C_EMAIL_ADDRESS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C_COUNTRY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C_CITY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="117" y="0" width="342" height="29" uuid="7a84a3fa-bbc1-4ca3-923d-7e69b7a39a31"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Vehicle GHG Emission Report  ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="27" y="57" width="481" height="35" uuid="af8bb66f-906e-4230-b2c9-781c2bb1bde1"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{C_NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="256" y="29" width="40" height="31" uuid="b788f9ba-3fd5-4439-a854-a76605758248"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[for]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<textField pattern="EEE, d MMM yyyy HH:mm:ss Z">
+				<reportElement x="455" y="14" width="100" height="20" uuid="35fecb32-7326-4fa9-826e-4041ff2652e5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="81" height="20" uuid="92e47ea4-2acb-4e59-8c1b-c763bb77bb00"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{C_COUNTRY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="0" width="55" height="20" uuid="3e989f4e-bdca-458c-997c-38072704696c"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{C_CITY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="100" height="20" uuid="4cc47a8b-ebc0-4167-ab8a-5afa2c12fcb7"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{C_PHONE_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="20" width="237" height="20" uuid="0f8fc0a1-9c62-4cf5-ad3c-eac5e196ae56"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{C_EMAIL_ADDRESS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="228" height="20" uuid="da67ef4a-3213-494f-9aa1-c11b8d6e0b81"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Your current fleet data are as listed:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="393" splitType="Prevent">
+			<componentElement>
+				<reportElement key="table 8" style="table 8" x="0" y="0" width="321" height="162" uuid="74587dcf-4fb1-4f51-bf74-d8b4770f948d">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT} == 1]]></printWhenExpression>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="FleetList" uuid="bff91624-a6e8-4885-b65a-efb0a9e33af1">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="197" uuid="93b9a032-0662-4587-8803-2ab18dd4369d">
+						<jr:tableHeader style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="197" height="30" uuid="297ff162-47b4-448e-aa96-248396329b58"/>
+								<text><![CDATA[VEHICLETYPE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 8_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="197" height="20" uuid="6b457c4c-b08a-4ff1-9995-14629aca9ad6"/>
+								<textFieldExpression><![CDATA[$F{VEHICLETYPE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="f10a045e-1d16-42f1-a0ad-437626fb29d1">
+						<jr:tableHeader style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="65" height="30" uuid="abece20b-bcba-4574-a6d1-acd0e3e52075"/>
+								<text><![CDATA[NUMBER_OF_VEHICLE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 8_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="65" height="20" uuid="c4c040b3-4612-42a6-9c30-c6cb86a84404"/>
+								<textFieldExpression><![CDATA[$F{NUMBER_OF_VEHICLE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="86" uuid="50b3ff71-9aa0-452a-84cf-e1da30d33c18">
+						<jr:tableHeader style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="74becad9-7aab-47ba-8ee1-e4118181185d"/>
+								<text><![CDATA[TOTAL_ANNUAL_MILAGE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 8_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="86" height="20" uuid="ed5d5e00-1aef-4377-9cc6-a70da0aafd72"/>
+								<textFieldExpression><![CDATA[$F{TOTAL_ANNUAL_MILAGE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="117" uuid="f3fba34f-de3d-4462-a767-8c136ace8f08">
+						<jr:tableHeader style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 8_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="111" height="30" uuid="67290325-6bca-4fbb-97e9-fea16517a19e"/>
+								<text><![CDATA[TOTAL_ANNUAL_FUEL_CONSUMPTION]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 8_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="746bafd2-5e0b-4b5b-9dd0-11235f7b3ebc"/>
+								<textFieldExpression><![CDATA[$F{TOTAL_ANNUAL_FUEL_CONSUMPTION}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="0" y="298" width="195" height="16" uuid="6f97eb1a-465c-4108-b710-9aaebd604786"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Your Fleet's Current Emissions: ]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 9" style="table 9" x="0" y="314" width="310" height="79" uuid="db972319-ee6d-4968-89da-4e5624ee9586">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT} == 1]]></printWhenExpression>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="EmissionSummary" uuid="6dc2196c-c570-433f-9222-2f7f11a1c7ba">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="2a68f55c-8ff4-4aa8-a396-d1442c7de761">
+						<jr:tableHeader style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 9_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="ef04effd-f22c-44aa-8b5e-50ae58300f65"/>
+								<text><![CDATA[CARBON_DIOXIDE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 9_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="430fb625-ef07-4a23-b6ac-8d632770cca9"/>
+								<textFieldExpression><![CDATA[$F{CARBON_DIOXIDE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="103" uuid="aab3a7dc-6cd2-4641-b680-12a09963b792">
+						<jr:tableHeader style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 9_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="103" height="30" uuid="2fea784b-c5fa-425f-9e9f-07a511ec557b"/>
+								<text><![CDATA[CARBON_MONOXIDE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 9_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="4bcc5e91-1d5e-4591-bd5f-853dd2ef88a5"/>
+								<textFieldExpression><![CDATA[$F{CARBON_MONOXIDE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="cd42d069-2b4c-4cdd-be41-a309cb81d4b2">
+						<jr:tableHeader style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 9_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="7383fa8f-9f7c-430f-8241-e143190d7ca0"/>
+								<text><![CDATA[VOLATILE_ORGANIC_COMPOUNDS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 9_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="4df97b09-5b92-4daf-ba1b-b80e2b4ce12d"/>
+								<textFieldExpression><![CDATA[$F{VOLATILE_ORGANIC_COMPOUNDS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="dfb72b7f-2ebc-454d-9310-5e63b65f6421">
+						<jr:tableHeader style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 9_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="be75a54e-09e4-4fe4-be63-7a30f45af1dd"/>
+								<text><![CDATA[NITROGEN_OXIDES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 9_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="4c5b6ed7-46a8-4388-a611-a2f551d8a2b0"/>
+								<textFieldExpression><![CDATA[$F{NITROGEN_OXIDES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="99662e94-53ab-4a12-8b93-633d5071e3f9">
+						<jr:tableHeader style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 9_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="22c49890-5129-4d4f-96a3-c4b1e63bb002"/>
+								<text><![CDATA[SULPHUR_OXIDES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 9_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="4ed1a0a1-7c3a-42f7-8474-455cbeb9362c"/>
+								<textFieldExpression><![CDATA[$F{SULPHUR_OXIDES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="85" uuid="c9d2abcc-3305-4631-ab2a-7ad4424aa758">
+						<jr:tableHeader style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="table 9_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 9_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="82" height="30" uuid="02b9f7b9-841f-4568-bd72-41314a9686ec"/>
+								<text><![CDATA[PARTICULATE_MATTER]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table 9_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="82" height="20" uuid="64ddffe8-a933-4d93-b33f-a9e8af903e2a"/>
+								<textFieldExpression><![CDATA[$F{PARTICULATE_MATTER}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="52" splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="166" y="21" width="80" height="20" uuid="0dd501f3-df7d-4fc3-bc99-bdbf13e8bdb8"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="246" y="21" width="40" height="20" uuid="68f26310-5646-43f0-bc0c-8c0f40aac7ac"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

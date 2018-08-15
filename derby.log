@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Aug 15 08:46:13 ICT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0165-3b43-096b-000006005860 
+on database directory /Users/saurav/NetBeansProjects/GreenLogisticsAuditor/GLSQSDB with class loader sun.misc.Launcher$AppClassLoader@27bc2616 
+Loaded from file:/Users/saurav/NetBeansProjects/GreenLogisticsAuditor/lib/JAVADB_DRIVER_LABEL/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_74-b02
+user.dir=/Users/saurav/NetBeansProjects/GreenLogisticsAuditor
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
